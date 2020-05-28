@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 98vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 650px;
+    height: 550px;
+}
+
+#light {
+    display: initial;
+}
+
+#tvscreen {
+    display: initial;
+}

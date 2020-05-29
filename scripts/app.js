@@ -1,9 +1,20 @@
+var tvscreen;
+var light;
+var logCon;
+
 document.addEventListener('DOMContentLoaded', () => {
-
-    const tvscreen = document.getElementById('tvscreen');
-    const light = document.getElementById('light');
-
+    tvscreen = document.getElementById('tvscreen');
+    light = document.getElementById('light');
+    logCon = document.querySelector('.logs');
 })
+
+function printLog(text) {
+    const value = document.createTextNode(`${text}`)
+    const p = document.createElement('p')
+
+    p.appendChild(value)
+    logCon.appendChild(p)
+}
 
 function toggleTV(state) {
     switch (state) {
